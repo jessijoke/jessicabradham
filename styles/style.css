@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'tuesday-night';
-    src: url('/jessicabradham/fonts/tuesdaynight-regular-webfont.woff') format('woff2'),
-         url('/jessicabradham/fonts/tuesdaynight-regular-webfont.woff2') format('woff');
+    src: url('/jessicabrahdam/fonts/TuesdayNight-Regular.woff') format('woff2'),
+         url('/jessicabrahdam/fonts/TuesdayNight-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
  
@@ -22,7 +22,7 @@ h1 {
 .container {
     height: 100vh;
     width: 100vw;
-    background-image: url("/jessicabradham/images/background.jpg");
+    background-image: url("/jessicabrahdam/images/background.jpg");
     background-size: cover;
     background-position: center;
     font-weight: bold;
@@ -38,7 +38,7 @@ h1 {
 
 .ball {
     position: absolute;
-    background-image: url("/jessicabradham/images/bubble.png");
+    background-image: url("/jessicabrahdam/images/bubble.png");
     background-size: contain;
     background-position: center;
     mix-blend-mode: hard-light;

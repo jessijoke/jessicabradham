@@ -41,6 +41,31 @@ function createBall() {
   );
 }
 
+let theBall = document.querySelectorAll("ball");
+
+theBall[1].addEventListener("mouseover", moveBall);
+
+function moveBall() {
+    console.log('BALLLLLLL');
+    let to = {
+        x: Math.random() * (1 % 2 === 0 ? -11 : 22),
+        y: Math.random() * 24
+      };
+    let anim = theBall[1].animate(
+        [
+          { transform: "translate(0, 0)" },
+          { transform: `translate(${to.x}rem, ${to.y}rem)` }
+        ],
+        {
+          duration: (Math.random() + 2) * 2000, 
+          direction: "alternate",
+          fill: "both",
+          iterations: Infinity,
+          easing: "ease-in-out"
+        }
+      );
+}
+
 
 let bubbles = document.querySelectorAll("ball");
 let bubbleCount = bubbles.length - 1;
