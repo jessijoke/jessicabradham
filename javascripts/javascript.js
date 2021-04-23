@@ -22,7 +22,7 @@ function createBall() {
   document.body.append(ball);
   
   let to = {
-    x: Math.random() * (5 % 2 === 0 ? -11 : 22),
+    x: Math.random() * (1 % 2 === 0 ? -11 : 22),
     y: Math.random() * 24
   };
 
