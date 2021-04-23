@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'tuesday-night';
+    src: url('/fonts/tuesdaynight-regular-webfont.woff2') format('woff2'),
+         url('/fonts/tuesdaynight-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ 
+ }
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'tuesday-night';
+    color: white;
+    font-size: 75px;
+    text-shadow: 2px 2px #black;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+}
+
+.bubble-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    position: absolute;
+    background-image: url("/images/bubble.png");
+    background-size: contain;
+    background-position: center;
+    mix-blend-mode: hard-light;
+    animation: scalein .5s ease-in;
+}
+
+@keyframes scalein {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
