@@ -15,8 +15,40 @@ body {
 h1 {
     font-family: 'tuesday-night';
     color: white;
-    font-size: 75px;
-    text-shadow: 2px 2px #black;
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+}
+
+h2 {
+    font-family: 'Sura', serif;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    width: 75%;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#bubbleMenu {
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0, .5);
+    margin: 15px;
+    background-image: url("/jessicabradham/images/bubble.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: hard-light;
+    transition: transform 250ms;
+}
+
+#bubbleMenu:hover {
+    transform: scaleY(1.25) scaleX(1.25);
 }
 
 .background {
@@ -35,6 +67,29 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.titleBanner {
+    background-color: rgb(18, 22, 53, .9);
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    width: 100vw;
+    mix-blend-mode: hard-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.splashDescription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .container {
