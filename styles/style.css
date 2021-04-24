@@ -111,7 +111,7 @@ nav {
 
 .ball {
     position: absolute;
-    background-image: url("/images/bubble.png");
+    background-image: url("/jessicabradham/images/bubble.png");
     background-size: contain;
     background-position: center;
     mix-blend-mode: hard-light;
