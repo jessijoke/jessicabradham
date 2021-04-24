@@ -10,7 +10,6 @@
 body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 
 h1 {
@@ -20,24 +19,38 @@ h1 {
     text-shadow: 2px 2px #black;
 }
 
-.container {
+.background {
     height: 100vh;
     width: 100vw;
     background-image: url("/jessicabradham/images/background.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.titleContainer {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    top: 0px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
     font-weight: bold;
     overflow: hidden;
 }
 
 #bubble-container {
+    top: 0px;
+    position: absolute;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
 }
 
 .ball {
