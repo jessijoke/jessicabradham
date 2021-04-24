@@ -10,6 +10,7 @@
 body {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 h1 {
@@ -26,14 +27,17 @@ h1 {
     background-size: cover;
     background-position: center;
     font-weight: bold;
+    overflow: hidden;
 }
 
-.bubble-container {
+#bubble-container {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .ball {
