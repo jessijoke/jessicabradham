@@ -46,11 +46,17 @@ nav {
     justify-content: center;
     align-items: center;
     background-blend-mode: hard-light;
-    transition: transform 250ms;
+    transition: transform 200ms;
 }
 
 #bubbleMenu:hover {
     transform: scaleY(1.25) scaleX(1.25);
+}
+
+#bubbleMenu.active {
+    -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
+    -ms-transform: rotate(90deg);      /* to support IE 9 */
+    transform: rotate(90deg);
 }
 
 .background {
@@ -98,7 +104,7 @@ nav {
    background-size: contain;
    background-position: right;
    background-repeat: no-repeat;
-   transition: width 250ms;
+   transition: width 200ms;
 }
 
 #navContainer.active {
@@ -126,6 +132,16 @@ hr.nav-line {
     letter-spacing: 10px;
     font-size: 20px;
     line-height: 50px;
+ }
+
+ .navLinks {
+    transform-origin: 100% 50%;
+    transition: transform 200ms;
+ }
+
+ .navLinks:hover {
+    cursor: pointer;
+    transform: scaleY(1.1) scaleX(1.1);
  }
 
 .splashDescription {
