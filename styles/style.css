@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'tuesday-night';
-  src: url("/fonts/tuesdaynight-regulars.woff") format("woff2"), url("/fonts/tuesdaynight-regulars.woff2") format("woff");
+  src: url("/jessicabradham/fonts/tuesdaynight-regulars.woff") format("woff2"), url("/jessicabradham/fonts/tuesdaynight-regulars.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -50,7 +50,7 @@ nav {
   text-shadow: 1px 1px black;
   margin: 15px;
   font-size: 20px;
-  background-image: url("/images/bubble.png");
+  background-image: url("/jessicabradham/images/bubble.png");
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -85,7 +85,7 @@ nav {
 .background {
   height: 100vh;
   width: 100vw;
-  background-image: url("/images/background.jpg");
+  background-image: url("/jessicabradham/images/background.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -113,7 +113,7 @@ nav {
 }
 
 .titleBanner {
-  background-color: rgba(50, 58, 112, 0.9);
+  background-color: rgb(50, 58, 112, .9);
   width: 100%;
   padding: 50px 0px 50px 0px;
   width: 100vw;
@@ -141,7 +141,7 @@ nav {
   right: -0;
   height: 100vh;
   width: 0px;
-  background-image: url("/images/nav.png");
+  background-image: url("/jessicabradham/images/nav.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ hr.nav-line {
 
 .ball {
   position: absolute;
-  background-image: url("/images/bubble.png");
+  background-image: url("/jessicabradham/images/bubble.png");
   background-size: contain;
   background-position: center;
   mix-blend-mode: hard-light;
