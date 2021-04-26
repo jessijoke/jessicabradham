@@ -18,7 +18,7 @@ class Bubble {
         
           let anim = bubble.animate(
             [
-              { transform: "translate(0, 0)" },
+              /*{ transform: "translate(0, 0)" },*/
               { transform: `translate(${to.x}rem, ${to.y}rem)` }
             ],
             {
@@ -37,13 +37,6 @@ class Bubble {
             bubbles[bubbles.length] =  new Bubble(bubbleContainer);
             bubbles.push(bubbles[bubbles.length]);
           });
-          /*
-          $('.ball').ripples({
-              resolution: 512,
-              dropRadius: 50,
-              perturbance: 0.02,
-          });
-          */
     }
 
 }
@@ -53,11 +46,3 @@ for (let i = 0; i < 11; i++) {
     bubbles[i] = new Bubble(bubbleContainer);
     bubbles.push(bubbles[i]);
 }
-
-/*
-$('.container').ripples({
-    resolution: 512,
-    dropRadius: 50,
-    perturbance: 0.02,
-});
-*/

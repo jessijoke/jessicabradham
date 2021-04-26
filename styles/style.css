@@ -1,183 +1,233 @@
 @font-face {
-    font-family: 'tuesday-night';
-    src: url('/jessicabradham/fonts/tuesdaynight-regulars.woff') format('woff2'),
-         url('/jessicabradham/fonts/tuesdaynight-regulars.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
- 
- }
-
-body {
-    height: 100vh;
-    width: 100vw;
+  font-family: 'tuesday-night';
+  src: url("/fonts/tuesdaynight-regulars.woff") format("woff2"), url("/fonts/tuesdaynight-regulars.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1 {
-    font-family: 'tuesday-night';
-    color: white;
-    font-size: 60px;
-    text-shadow: 2px 2px black;
-}
-
-h2 {
-    font-family: 'Sura', serif;
-    text-shadow: 2px 2px black;
-    text-align: center;
-    width: 75%;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#bubbleMenu {
-    z-index: 10;
-    color: white;
-    text-shadow: 1px 1px rgb(0, 0, 0, .5);
-    margin: 15px;
-    font-size: 20px;
-    background-image: url("/jessicabradham/images/bubble.png");
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-blend-mode: hard-light;
-    transition: transform 200ms;
-}
-
-#bubbleMenu:hover {
-    transform: scaleY(1.25) scaleX(1.25);
-}
-
-#bubbleMenu.active {
-    -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
-    -ms-transform: rotate(90deg);      /* to support IE 9 */
-    transform: rotate(90deg);
-}
-
-.background {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("/jessicabradham/images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.titleContainer {
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-}
-
-.titleBanner {
-    background-color: rgb(18, 22, 53, .9);
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-    width: 100vw;
-    mix-blend-mode: hard-light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-#navContainer {
-   overflow: hidden;
-   position: absolute;
-   top: 0;
-   right: -0;
-   height: 100vh;
-   width: 0px;
-   background-image: url("/jessicabradham/images/nav.png"); 
-   background-size: contain;
-   background-position: right;
-   background-repeat: no-repeat;
-   transition: width 200ms;
-}
-
-#navContainer.active {
-    display: block;
-    width: 500px;
- }
-
-.nav-line {
-    width: 235px;
-    text-align: right;
-    margin-right: 0;
-}
-
-hr.nav-line {
-    background-color: #eee;
-    border: 0 none;
-    color: #eee;
-    height: 1px;
-}
-
- .navElements {
-     padding: 80px 10px 0px 0px;
-    color: white;
-    text-align: right;
-    letter-spacing: 10px;
-    font-size: 20px;
-    line-height: 50px;
- }
-
- .navLinks {
-    transform-origin: 100% 50%;
-    transition: transform 200ms;
- }
-
- .navLinks:hover {
-    cursor: pointer;
-    transform: scaleY(1.1) scaleX(1.1);
- }
-
-.splashDescription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.container {
-    top: 0px;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    font-weight: bold;
-    overflow: hidden;
-}
-
-#bubble-container {
-    top: 0px;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-}
-
-.ball {
-    position: absolute;
-    background-image: url("/jessicabradham/images/bubble.png");
-    background-size: contain;
-    background-position: center;
-    mix-blend-mode: hard-light;
-    animation: scalein .5s ease-in;
+@-webkit-keyframes scalein {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
 
 @keyframes scalein {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'tuesday-night';
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-family: 'Sura', serif;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  width: 75%;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bubbleMenu {
+  z-index: 10;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin: 15px;
+  font-size: 20px;
+  background-image: url("/images/bubble.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-blend-mode: hard-light;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+#bubbleMenu:hover {
+  -webkit-transform: scaleY(1.25) scaleX(1.25);
+          transform: scaleY(1.25) scaleX(1.25);
+}
+
+#bubbleMenu.active {
+  -webkit-transform: rotate(90deg);
+  /* to support Safari and Android browser */
+  /* to support IE 9 */
+  transform: rotate(90deg);
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.titleContainer {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.titleBanner {
+  background-color: rgba(50, 58, 112, 0.9);
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  width: 100vw;
+  mix-blend-mode: hard-light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#navContainer {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: -0;
+  height: 100vh;
+  width: 0px;
+  background-image: url("/images/nav.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  -webkit-transition: width 200ms;
+  transition: width 200ms;
+}
+
+#navContainer.active {
+  display: block;
+  width: 500px;
+}
+
+.nav-line {
+  width: 235px;
+  text-align: right;
+  margin-right: 0;
+}
+
+hr.nav-line {
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1px;
+}
+
+.navElements {
+  padding: 80px 10px 0px 0px;
+  color: white;
+  text-align: right;
+  letter-spacing: 10px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.navLinks {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.navLinks:hover {
+  cursor: pointer;
+  -webkit-transform: scaleY(1.1) scaleX(1.1);
+          transform: scaleY(1.1) scaleX(1.1);
+}
+
+.splashDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  top: 0px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#bubble-container {
+  top: 0px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ball {
+  position: absolute;
+  background-image: url("/images/bubble.png");
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: hard-light;
+  -webkit-animation: scalein .5s ease-in-out;
+          animation: scalein .5s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
