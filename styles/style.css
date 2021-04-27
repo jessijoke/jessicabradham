@@ -229,6 +229,22 @@ hr.nav-line {
   width: 100vw;
 }
 
+.bubbleBurstContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bubbleBurst {
+  position: absolute;
+  background-image: url("/jessicabradham/images/burst.gif");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  background-position: center;
+}
+
 .ball {
   position: absolute;
   background-image: url("/jessicabradham/images/bubble.png");

@@ -1,4 +1,7 @@
 let bubbleContainer = document.getElementById("bubble-container");
+let bubbleBurstContainer = document.createElement("div");
+bubbleBurstContainer.classList.add("bubbleBurstContainer");
+bubbleContainer.append(bubbleBurstContainer);
 
 class Bubble {
     constructor(containingDiv) {
@@ -42,6 +45,21 @@ class Bubble {
           bubble.addEventListener('click', (e)=> {
             console.log("click");
             bubble.removeEventListener('click', (e));
+
+            let bubbleBurst = document.createElement("div");
+            bubbleBurst.style.marginTop = (e.clientY-50)+"px";
+            bubbleBurst.style.marginLeft = (e.clientX-50)+"px";
+            bubbleBurst.classList.add("bubbleBurst");
+
+            setTimeout(function(){ 
+              bubbleBurst.remove();
+            }, 1250);
+            
+              
+            //clearTimeout(removeBubble);
+    
+            bubbleBurstContainer.append(bubbleBurst);
+
             bubble.remove();
             bubbles[bubbles.length] =  new Bubble(bubbleContainer);
             bubbles.push(bubbles[bubbles.length]);
