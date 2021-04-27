@@ -36,6 +36,8 @@ h2 {
   text-shadow: 2px 2px black;
   text-align: center;
   width: 75%;
+  line-height: 25px;
+  letter-spacing: 3px;
 }
 
 nav {
@@ -68,6 +70,8 @@ nav {
   transition: -webkit-transform 200ms;
   transition: transform 200ms;
   transition: transform 200ms, -webkit-transform 200ms;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
 }
 
 #bubbleMenu:hover {
@@ -113,7 +117,7 @@ nav {
 }
 
 .titleBanner {
-  background-color: rgb(50, 58, 112, .9);
+  background-color: rgba(50, 58, 112, 0.95);
   width: 100%;
   padding: 50px 0px 50px 0px;
   width: 100vw;
@@ -147,6 +151,8 @@ nav {
   background-repeat: no-repeat;
   -webkit-transition: width 200ms;
   transition: width 200ms;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
 }
 
 #navContainer.active {
@@ -174,6 +180,8 @@ hr.nav-line {
   letter-spacing: 10px;
   font-size: 20px;
   line-height: 50px;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
 }
 
 .navLinks {

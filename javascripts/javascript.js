@@ -11,9 +11,18 @@ class Bubble {
         bubble.style.height = bubble.style.width;
         containingDiv.append(bubble);
 
+        let numX = Math.random() * 20;
+        if (numX % 0 === 0) {
+          numX = numX - (numX*2);
+        }
+        let numY = Math.random() * 20;
+        if (numY % 0 === 0) {
+          numY = numY - (numY*2);
+        }
+
         let to = {
-            x: Math.random() * (1 % 2 === 0 ? -11 : (Math.random() * 40)),
-            y: Math.random() * (Math.random() * 40)
+            x: Math.random() * (bubbles.length % 2 === 0 ? -11 : (numX)),
+            y: Math.random() * (numY)
           };
         
           let anim = bubble.animate(
